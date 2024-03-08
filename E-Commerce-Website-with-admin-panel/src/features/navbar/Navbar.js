@@ -43,9 +43,9 @@ export default function Navbar({ children }) {
                       <Link to="/">
                         <div className="flex-shrink-0">
                           <img
-                            className="h-8 w-8"
+                            className="h-12 w-14"
                             // src="../../snapkart.jpg"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                            src="https://www.vibehub.io/statics/tokens/vibe.png"
                             alt="Your Company"
                           />
                         </div>
@@ -235,8 +235,11 @@ export default function Navbar({ children }) {
           <header className="bg-white shadow">
             <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
               <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-                E-Commerce
+                VibeHub             <strong><i style={{'fontSize':'21px','padding':'132px'}}>Elevate Your Shopping Experience with Every Click</i> </strong> 
               </h1>
+              
+             
+              
             </div>
           </header>
           <main>

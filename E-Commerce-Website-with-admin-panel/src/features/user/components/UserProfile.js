@@ -51,7 +51,7 @@ export default function UserProfile() {
   console.log({ user: userInfo });
   return (
     <div>
-      <div className="mx-auto  max-w-7xl px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="mx-auto  max-w-7xl px-4 sm:px-6 lg:px-8 bg-white" style={{'backgroundColor':'#79756c00'}}>
         {userInfo && (
           <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
             {userInfo.name && (

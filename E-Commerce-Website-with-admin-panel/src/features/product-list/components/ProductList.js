@@ -120,7 +120,7 @@ export default function ProductList() {
           filters={filters}
         ></MobileFilter>
 
-        <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-white">
+        <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-white" style={{'backgroundColor':'#79756c54'}}>
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900">
               All Products
@@ -205,7 +205,7 @@ export default function ProductList() {
             </div>
           </section>
           {/* product and filter section end  */}
-          <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
+          <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6" style={{'backgroundColor':'#79756c00'}}>
             <Pagination
               page={page}
               setPage={setPage}
@@ -356,7 +356,7 @@ function DesktopFilter({ handleFilter, filters }) {
             {({ open }) => (
               <>
                 <h3 className="-my-3 flow-root">
-                  <Disclosure.Button className="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500">
+                  <Disclosure.Button className="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500" style={{'backgroundColor':'#79756c00','fontSize':'21px'}}>
                     <span className="font-medium text-gray-900">
                       {section.name}
                     </span>
@@ -405,7 +405,7 @@ function ProductGrid({ products, status }) {
   return (
     <>
       <div className="bg-white">
-        <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
+        <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8" style={{'backgroundColor':'#79756c54'}}>
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
             {status === "loading" ? (
               <Hourglass
